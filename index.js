@@ -9,30 +9,30 @@ function updateEmployeeWithKeyAndValue(obj, key, value) {
   return nextEmployee;
 }
 
-/*const employee1 = updateEmployeeWithKeyAndValue(employee, 'name', 'Arnoud Swart');
+const employee1 = updateEmployeeWithKeyAndValue(employee, 'name', 'Arnoud Swart');
 console.log(employee1);
-console.log(employee);*/
+console.log(employee);
 
 function destructivelyUpdateEmployeeWithKeyAndValue(obj, key, value) {
   obj[key] = value;
   return obj;
 }
-/*const employee2 = destructivelyUpdateEmployeeWithKeyAndValue(employee, 'name', 'Celia Swart');
+const employee2 = destructivelyUpdateEmployeeWithKeyAndValue(employee, 'name', 'Celia Swart');
 console.log(employee2);
-console.log(employee);*/
+console.log(employee);
 
 function deleteFromEmployeeByKey(obj, key) {
   const employee3 = {...obj};
   delete employee3[key];
   return employee3;
 }
-/*const employee3 = deleteFromEmployeeByKey(employee1, 'zip');
+const employee3 = deleteFromEmployeeByKey(employee1, 'zip');
 console.log(employee3);
-console.log(employee1);*/
+console.log(employee1);
 
 function destructivelyDeleteFromEmployeeByKey(obj, key) {
   delete obj[key];
   return obj;
 }
-/*destructivelyDeleteFromEmployeeByKey(employee1, 'zip');
-console.log(employee1);*/
+destructivelyDeleteFromEmployeeByKey(employee1, 'zip');
+console.log(employee1);
